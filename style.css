@@ -88,8 +88,10 @@ section
 
 img
 {
-    border: 2px rgb(92, 13, 87) solid;
-    box-shadow: 2px 2px 4px grey;
+    width: 200px;
+    height: 200px;
+    border-image: 2px 2px 6px grey ;
+    /* box-shadow: 2px 2px 4px grey; */
 }
 
 table
