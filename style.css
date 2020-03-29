@@ -22,13 +22,7 @@
     font-style: normal;
 }
 
-p, table
-{
-    font-size: 0.8em;
-    font-family: 'sinkin_sans300_light', sans-serif;
-}
-
-.texte_puces
+p, ul
 {
     font-size: 0.8em;
     font-family: 'sinkin_sans300_light', sans-serif;
@@ -41,10 +35,12 @@ h1
     color: black;
 }
 
-.prenom
+.h2_fond
 {
-    color: rgb(92, 13, 87);
     font-family: 'sinkin_sans300_light', sans-serif;
+    font-size: 1.3em;
+    color: rgb(152, 104, 149);
+    background-color: rgb(92, 13, 87);
 }
 
 h2
@@ -52,12 +48,6 @@ h2
     font-family: 'sinkin_sans300_light', sans-serif;
     font-size: 1.3em;
     color: rgb(152, 104, 149);
-}
-
-.titre_profession
-{
-    font-size: 1em;
-    font-family: 'sinkin_sans300_light', sans-serif;
 }
 
 #lisere, #contenuCV
@@ -68,10 +58,20 @@ h2
 
 #lisere
 {
-    width: 20%;
-    margin-right: 2%;
+    width: 30%;
     height: 1550px;
     background-color: rgb(152, 104, 149);
+}
+.prenom
+{
+    color: rgb(92, 13, 87);
+    font-family: 'sinkin_sans300_light', sans-serif;
+}
+
+.titre_profession
+{
+    font-size: 1em;
+    font-family: 'sinkin_sans300_light', sans-serif;
 }
 
 #contenuCV
@@ -90,7 +90,8 @@ img
 {
     width: 200px;
     height: 200px;
-    border-image: 2px 2px 6px grey ;
+    margin-top: 50px;
+    /* border-image: 2px 2px 6px grey ; */
     /* box-shadow: 2px 2px 4px grey; */
 }
 
@@ -98,18 +99,6 @@ img
 {
     width: 50px;
     height: 50px;
-}
-
-table
-{
-    width: 900px;
-    height: 120px;
-    border-spacing: 0px 20px;
-}
-
-td
-{
-    vertical-align: top;
 }
 
 .dates
