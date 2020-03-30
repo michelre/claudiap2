@@ -116,8 +116,19 @@ img
 header
 {
     display: inline-flexbox;
-    border-bottom-color: rgb(92, 13, 87);
+    /* border-bottom: 2px solid rgb(92, 13, 87); */
 }
+
+header::after
+{
+    content: ""; 
+    display: block; 
+    margin: 0; 
+    width: 20%; 
+    padding-top: 10px; 
+    border-bottom: 2px solid rgb(92, 13, 87); 
+}
+
 
 h1
 {
@@ -150,6 +161,7 @@ section
 .titre_section
 {
     display: flex;
+    border-bottom: 2px solid rgb(152, 104, 149);
 }
 
 
