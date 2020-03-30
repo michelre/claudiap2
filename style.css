@@ -38,9 +38,13 @@ h1
 .h2_fond
 {
     font-family: 'sinkin_sans300_light', sans-serif;
+    font-weight: bold;
     font-size: 1.3em;
-    color: rgb(152, 104, 149);
+    color: white;
     background-color: rgb(92, 13, 87);
+    text-align: center;
+    vertical-align: middle;
+    height: 45px;
 }
 
 h2
@@ -48,6 +52,14 @@ h2
     font-family: 'sinkin_sans300_light', sans-serif;
     font-size: 1.3em;
     color: rgb(152, 104, 149);
+    text-transform: uppercase;
+}
+
+.text_lisere
+{
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: justify;
 }
 
 #lisere, #contenuCV
@@ -62,6 +74,46 @@ h2
     height: 1550px;
     background-color: rgb(152, 104, 149);
 }
+
+.container_lisere
+{
+    display: inline-block;
+}
+
+.loisirs
+{
+    align-content: flex-end;
+}
+
+.icons_loisirs
+{
+    display: flex;
+    justify-content: center;
+}
+
+.icons_lo
+{
+    width: 80px;
+    height: 80px;
+    margin: 16px;
+}
+
+img
+{
+    width: 250px;
+    height: 250px;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxshadow
+{
+
+    /* position: relative;
+    box-shadow: 0, 0, 0,0.5;
+    padding: 10px; */
+}
+
 .prenom
 {
     color: rgb(92, 13, 87);
@@ -84,15 +136,6 @@ section
 {
     vertical-align: top;
     margin-right: 2%;
-}
-
-img
-{
-    width: 200px;
-    height: 200px;
-    margin-top: 50px;
-    /* border-image: 2px 2px 6px grey ; */
-    /* box-shadow: 2px 2px 4px grey; */
 }
 
 .icons
