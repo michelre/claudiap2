@@ -63,12 +63,10 @@ a:link
     color: black;
 }
 
-
 a:hover
 {
     color:  white;
 }
-
 
 #lisere, #contenuCV
 {
@@ -79,7 +77,7 @@ a:hover
 #lisere
 {
     width: 30%;
-    height: 1700px;
+    height: 2050px;
     background-color: rgb(152, 104, 149);
     position: relative;
 }
@@ -144,22 +142,13 @@ header
     height: 270px;
 }
 
-header::after
-{
-    content: ""; 
-    display: block; 
-    margin: 0; 
-    width: 10%; 
-    padding-top: 0px; 
-    border-bottom: 2px solid rgb(92, 13, 87); 
-}
-
 h1
 {
     font-family: 'sinkin_sans100_thin', sans-serif;
     font-size: 3em;
     color: black;
     text-transform: uppercase;
+    margin-bottom: 1%;
 }
 
 .prenom
@@ -176,10 +165,21 @@ h1
     margin-top: 0px;
 }
 
+.titre_profession::after
+{
+    content: ""; 
+    display: block; 
+    margin: 0; 
+    width: 10%; 
+    padding-top: 1%; 
+    border-bottom: 2px solid rgb(92, 13, 87); 
+}
+
 section
 {
     vertical-align: top;
     margin-right: 2%;
+    margin-bottom: 50px;
 }
 
 .titre_section
@@ -188,21 +188,39 @@ section
     border-bottom: 2px solid rgb(152, 104, 149);
 }
 
-.icons
+.icons1
 {
     width: 50px;
     height: 50px;
-    stroke: rgb(152, 104, 149);
+}
+
+.icons
+{
+    width: 40px;
+    height: 40px;
 }
 
 .container
 {
     display: flex;
+    margin-bottom: 10px;
 }
 
 .dates
 {
     width: 30%;
+}
+
+.dot_circle
+{
+    width: 3%;
+}
+
+.dot
+{
+    width: 12px;
+    height: 12px;
+    fill: rgb(152, 104, 149);
 }
 
 .description
@@ -214,6 +232,12 @@ section
 {
     font-weight: bold;
     color: rgb(92, 13, 87)
+}
+
+.design, .langages
+{
+    margin-bottom: 10px;
+    width: 50%;
 }
 
 @media all and (max-width: 1024px)
