@@ -24,7 +24,7 @@
 
 p, ul
 {
-    font-size: 0.8em;
+    font-size: 0.9em;
     font-family: 'sinkin_sans300_light', sans-serif;
 }
 
@@ -81,6 +81,7 @@ a:hover
     width: 30%;
     height: 1700px;
     background-color: rgb(152, 104, 149);
+    position: relative;
 }
 
 .container_lisere
@@ -90,7 +91,10 @@ a:hover
 
 .loisirs
 {
-    align-content: flex-end;
+    position: absolute;
+    bottom: 0;
+    padding: 20px 0px;
+    width: 100%;
 }
 
 .icons_loisirs
