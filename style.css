@@ -110,22 +110,21 @@ a:hover
 
 .photo_circle
 {
+    position: relative;
     width: 250px;
     height: 250px;
+    overflow: hidden;
+    border-radius: 50%;
     display: block;
     margin: 25px auto;
-    -moz-border-radius : 125px;
-    -webkit-border-radius : 125px;
-    border-radius : 125px;
     border: 4px solid rgb(92, 13, 87);
 }
 
 .photo
 {
-    border: 4px solid rgb(92, 13, 87);
-    border-image: round;
     width: 250px;
     height: 250px;
+    border: 4px solid rgb(92, 13, 87);
     display: block;
     margin: 25px auto;
 }
@@ -138,7 +137,10 @@ a:hover
 
 header
 {
-    display: inline-flexbox;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
     height: 270px;
 }
 
@@ -185,6 +187,7 @@ section
 .titre_section
 {
     display: flex;
+    align-items: center;
     border-bottom: 2px solid rgb(152, 104, 149);
 }
 
