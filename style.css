@@ -207,11 +207,13 @@ section
 .dates
 {
     width: 30%;
+    min-width: 200px;
 }
 
 .dot_circle
 {
     width: 3%;
+    min-width: 30px;
 }
 
 .dot
@@ -224,6 +226,7 @@ section
 .description
 {
     width: 60%;
+    min-width: 420px;
 }
 
 .entreprise
@@ -296,11 +299,13 @@ section
         flex-direction: column;
         /* overflow: auto; */
     }
+
     #lisere
     {
         width: auto;
         height: auto;
     }
+
     #contenuCV
     {
         width: auto;
@@ -313,14 +318,16 @@ section
         /* width: 30%;
         height: 30%; */
     }
+
    .text_small_screen
     {
         display: flex;
-        margin: 30px 40px;
+        margin: 0px 40px;
         /* margin: auto; */
         /* width: 40%;
         height: 40%; */
     }
+
     .photo_texte
     {
         display: flex;
@@ -333,12 +340,22 @@ section
     {
         overflow-block: auto;
     } */
+
     .loisirs
     {
         position: relative;
     }
+
     header
     {
         display: none;
+    }
+
+    .container
+    {
+        display: flex;
+        flex-wrap: wrap;
+        margin-block-end: 10px;
+        background-color: rgba(152, 104, 149, 20%)
     }
 }
