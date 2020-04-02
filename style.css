@@ -27,6 +27,11 @@ body
     margin: 0px;
 }
 
+#pageframe
+{
+    display: flex;
+}
+
 p, ul
 {
     font-size: 0.9em;
@@ -56,7 +61,7 @@ p, ul
     margin-left: 60px;
 }
 
-.text_lisere
+.text_lisere, .text_lisere_2
 {
     margin: 30px 40px;
     text-align: justify;
@@ -79,11 +84,11 @@ ul.liste_langues
     padding: 0;
 }
 
-#lisere, #contenuCV
+/* #lisere, #contenuCV
 {
     display: inline-block;
     vertical-align: top;
-}
+} */
 
 #lisere
 {
@@ -238,7 +243,7 @@ section
 .description
 {
     width: 60%;
-    min-width: 420px;
+    /* min-width: 420px; */
 }
 
 .entreprise
@@ -260,10 +265,9 @@ ul
 
 @media screen and (max-width: 900px) /* for tablets */
 {
-    #lisere, #contenuCV
+    #pageframe
     {
         flex-direction: column;
-        /* overflow: auto; */
     }
     #lisere
     {
@@ -274,19 +278,18 @@ ul
     {
         width: auto;
     }
-
     .photo_circle
     {
         display: flex;
         margin-left: 5%;
-        /* width: 30%;
-        height: 30%; */
     }
    .text_small_screen
     {
         display: flex;
         flex-direction: column;
-        margin: auto;
+        margin-left: 40px;
+        justify-content: center;
+        /* margin: auto; */
         /* width: 40%;
         height: 40%; */
     }
@@ -295,10 +298,19 @@ ul
         display: flex;
     }
 
+    .text_lisere_2
+    {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
     /* .contact, .propos, .loisirs
     {
         overflow-block: auto;
     } */
+
     .loisirs
     {
         position: relative;
@@ -311,10 +323,9 @@ ul
 
 @media screen and (max-width: 600px) /* for smarthpones */
 {
-    #lisere, #contenuCV
+    #pageframe
     {
-        flex-direction: column;
-        /* overflow: auto; */
+        display: inline-flex;
     }
 
     #lisere
@@ -328,21 +339,19 @@ ul
         width: auto;
     }
 
-    .photo_circle
-    {
-        display: flex;
-        /* margin-left: 5%; */
-        /* width: 30%;
-        height: 30%; */
-    }
-
-   .text_small_screen
+   .text_small_screen 
     {
         display: flex;
         margin: 0px 40px;
+        padding-top: 0px;
         /* margin: auto; */
         /* width: 40%;
         height: 40%; */
+    }
+
+    h1
+    {
+        margin: 0px;
     }
 
     .photo_texte
@@ -351,6 +360,12 @@ ul
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    .text_lisere_2
+    {
+        display: flex;
+        flex-direction: column;
     }
 
     /* .contact, .propos, .loisirs
@@ -372,11 +387,17 @@ ul
     {
         display: flex;
         flex-wrap: wrap;
-        margin-block-end: 10px;
+        margin-block-end: 40px;
         /* background-color: rgba(152, 104, 149, 20%); */
-        margin: 30px;
+        /* margin: 30px; */
     }
     
+    .description
+    {
+    width: 100%;
+    /* min-width: 420px; */
+    }
+
     p
     {
         margin: 3px;
