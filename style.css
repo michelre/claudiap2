@@ -258,7 +258,7 @@ ul
     width: 50%;
 }
 
-@media screen and (max-width: 992px) /* for tablets */
+@media screen and (max-width: 900px) /* for tablets */
 {
     #lisere, #contenuCV
     {
@@ -373,6 +373,17 @@ ul
         display: flex;
         flex-wrap: wrap;
         margin-block-end: 10px;
-        background-color: rgba(152, 104, 149, 20%)
+        /* background-color: rgba(152, 104, 149, 20%); */
+        margin: 30px;
+    }
+    
+    p
+    {
+        margin: 3px;
+    }
+
+    .dates
+    {
+        width: 80%;
     }
 }
