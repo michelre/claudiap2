@@ -91,6 +91,7 @@ a:hover
 ul.liste_langues
 {
     list-style-type: none;
+    line-height: 2.2;
     margin: 0;
     padding: 0;
 }
@@ -163,7 +164,7 @@ header
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: left;
+    /* align-items: left; */
     height: 270px;
 }
 
@@ -403,7 +404,8 @@ ul
     {
         display: flex;
         flex-wrap: wrap;
-        margin-block-end: 40px;
+        /* margin-block-end: 40px; */
+        margin-bottom: 40px;
         /* background-color: rgba(152, 104, 149, 20%); */
         /* margin: 30px; */
     }
