@@ -24,7 +24,7 @@
 
 body
 {
-    margin: 0px;
+    margin: 0;
 }
 
 #pageframe
@@ -101,14 +101,14 @@ ul.liste_langues
 #lisere
 {
     width: 30%;
-    height: 2100px;
     background-color: rgb(152, 104, 149);
-    position: relative;
 }
 
 .container_lisere
 {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .text_small_screen
@@ -118,8 +118,8 @@ ul.liste_langues
 
 .loisirs
 {
-    position: absolute;
-    bottom: 0;
+    margin-bottom: 0;
+    margin-top: auto;
     padding: 20px 0px;
     width: 100%;
 }
@@ -193,12 +193,12 @@ h1
 
 .titre_profession::after
 {
-    content: ""; 
-    display: block; 
-    margin: 0; 
-    width: 10%; 
-    padding-top: 1%; 
-    border-bottom: 2px solid rgb(92, 13, 87); 
+    content: "";
+    display: block;
+    margin: 0;
+    width: 10%;
+    padding-top: 1%;
+    border-bottom: 2px solid rgb(92, 13, 87);
 }
 
 section
@@ -312,7 +312,7 @@ ul
         display: flex;
     }
 
-    .text_lisere_2 
+    .text_lisere_2
     {
         display: flex;
         justify-content: space-between;
@@ -355,7 +355,7 @@ ul
         width: auto;
     }
 
-   .text_small_screen 
+   .text_small_screen
     {
         /* display: flex; */
         margin: 0px 40px;
@@ -409,7 +409,7 @@ ul
         /* background-color: rgba(152, 104, 149, 20%); */
         /* margin: 30px; */
     }
-    
+
     .description
     {
     width: 100%;
@@ -425,4 +425,21 @@ ul
     {
         width: 80%;
     }
+
+    .text_small_screen {
+        text-align: center;
+    }
+
+    .titre_profession::after {
+        display: none;
+    }
+}
+
+/* Session du 03/04 */
+.text_lisere_2 a {
+    text-decoration: none;
+}
+
+.text_lisere_2 a:hover {
+    color: initial;
 }
